@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!--<com.github.ybq.android.spinkit.SpinKitView-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/spin_kit"-->
+    <!--android:background="@color/colorWhite"-->
+    <!--style="@style/SpinKitView.DoubleBounce"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--app:SpinKit_Color="@color/colorAccent" />-->
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fitness_background"
+        android:orientation="vertical"
+        tools:context=".MainLoginActivity">
+
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:text="Sign In"-->
+        <!--android:textSize="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnMentor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="Mentor"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="Upcoming birthday"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="Upcoming Membership Expire"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="Upcoming Payment Due"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="CREATE A PLAN"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnRegisterUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="REGISTERED USERS"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="franchise owners"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:id="@+id/btnViewProfile"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="View Profile"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:id="@+id/btnLogout"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="Logout"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorWhite" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fitness_background" />
+
+
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp"
+        android:background="@drawable/border_white_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Mentor Type List"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lvMentorType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvHeaderTitle"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingTop="20dp" />
+
+
+</RelativeLayout>

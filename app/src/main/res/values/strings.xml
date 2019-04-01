@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FitnessApp</string>
+    <string name="title_activity_main_registration">Registration</string>
+    <string name="title_activity_main_profile">View Profile</string>
+
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="new_user_register">New User? Get Register</string>
+    <string name="Rs">\u20B9</string>
+    <string name="pick_image_intent_text">Choose an image</string>
+
+</resources>

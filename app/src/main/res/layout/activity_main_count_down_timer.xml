@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/fitness_background"
+    android:layout_height="match_parent"
+    tools:context=".MainCountDownTimerActivity">
+
+    <cn.iwgang.countdownview.CountdownView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:isHideTimeBackground="true"
+        app:isShowDay="true"
+        android:id="@+id/cv_countdownViewTest1"
+        app:isShowHour="true"
+        app:isShowMinute="true"
+        android:layout_gravity="center"
+        app:isShowSecond="true"
+        app:isShowMillisecond="true"
+        app:timeTextColor="@color/colorWhite"
+        app:timeTextSize="30sp"
+        app:isTimeTextBold="true"
+        app:suffixGravity="bottom"
+        app:suffixTextColor="@color/colorWhite"
+        app:suffixTextSize="12sp"
+        app:suffixDay="Days"
+        app:suffixHour="Hr"
+        app:suffixMinute="Min"
+        app:suffixSecond="Sec"
+        app:suffixMillisecond="Ms" />
+</LinearLayout>
