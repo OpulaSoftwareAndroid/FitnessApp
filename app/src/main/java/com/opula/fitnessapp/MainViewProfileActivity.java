@@ -235,7 +235,7 @@ public class MainViewProfileActivity extends AppCompatActivity {
                             customTextViewBirthDate.setText(response.body().getInfo().getDOB());
                             Toast.makeText(MainViewProfileActivity.this, "" + response.body().getMsg(), Toast.LENGTH_SHORT).show();
 
-                            Picasso.get().load(R.drawable.user_default_image_boy).into(circleImageViewProfileImage);
+                            Picasso.with(getApplicationContext()).load(R.drawable.user_default_image_boy).into(circleImageViewProfileImage);
 
 //                            android:src="@drawable/user_default_image_boy"
 

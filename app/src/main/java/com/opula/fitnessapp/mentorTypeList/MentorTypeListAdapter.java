@@ -59,7 +59,7 @@ public class MentorTypeListAdapter extends BaseAdapter {
             mViewHolder = (MyViewHolder) convertView.getTag();
         }
 
-        Picasso.get().load(data.get(position).getImage()).into(mViewHolder.ivMentor);
+        Picasso.with(context).load(data.get(position).getImage()).into(mViewHolder.ivMentor);
 
         mViewHolder.tvName.setText(data.get(position).getName());
         mViewHolder.tvDate.setText(data.get(position).getDOB());

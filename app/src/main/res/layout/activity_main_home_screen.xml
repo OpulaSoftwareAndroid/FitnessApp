@@ -76,7 +76,57 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
+                android:id="@+id/btnSelectDietPlan"
                 android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="Select Diet Plan"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/btnViewSubscriptionPlan"
+                android:layout_weight="1.5"
+                android:background="@drawable/right_rounded_yellow_button"
+                android:text="View Subscription Plan"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1.5"
+                android:visibility="gone"
                 android:background="@drawable/right_rounded_yellow_button"
                 android:text="Upcoming birthday"
                 android:textColor="@color/colorWhite" />

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -31,10 +32,11 @@ public class MainHomeScreenActivity extends AppCompatActivity {
     @BindView(R.id.btnMentor)
     Button btnMentor;
 
-    Button btnRegisterUser,btnViewProfile,btnLogout;
+    Button btnRegisterUser,btnViewProfile,btnLogout,btnSelectDietPlan,btnViewSubscriptionPlan;
     SharedPreference sharedPreference;
     String strRegisterID;
     String TAG = "MainHomeScreenActivity";
+    LinearLayout linearLayoutSelectDietPlan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,26 @@ public class MainHomeScreenActivity extends AppCompatActivity {
 
         sharedPreference = new SharedPreference();
         strRegisterID = sharedPreference.getValue(this, Constants.STORED_REGISTER_ID);
+        btnSelectDietPlan=findViewById(R.id.btnSelectDietPlan);
+        btnSelectDietPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainHomeScreenActivity.this, MainDietPlanActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        btnViewSubscriptionPlan=findViewById(R.id.btnViewSubscriptionPlan);
+        btnViewSubscriptionPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainHomeScreenActivity.this, MainSubscriptionType.class);
+                startActivity(intent);
+
+            }
+        });
+
 
         btnRegisterUser = findViewById(R.id.btnRegisterUser);
         btnLogout = findViewById(R.id.btnLogout);

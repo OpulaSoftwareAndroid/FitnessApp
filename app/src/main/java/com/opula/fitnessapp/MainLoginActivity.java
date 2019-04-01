@@ -1,8 +1,8 @@
 package com.opula.fitnessapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +19,6 @@ import com.opula.fitnessapp.Crude.AppGlobal;
 import com.opula.fitnessapp.Crude.Constants;
 import com.opula.fitnessapp.Crude.SharedPreference;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -92,7 +91,7 @@ public class MainLoginActivity extends AppCompatActivity {
 
                                 String strRegisterId=jsonObjectInfo.getString(Constants.TAG_REGISTER_ID);
                                 sharedPreference.save(getApplicationContext(),strRegisterId,Constants.STORED_REGISTER_ID);
-                                Intent intent=new Intent(MainLoginActivity.this,MainCountDownTimerActivity.class);
+                                Intent intent=new Intent(MainLoginActivity.this,MainHomeScreenActivity.class);
                                 startActivity(intent);
                                 finish();
                                 Toast.makeText(MainLoginActivity.this,strMessage,Toast.LENGTH_LONG).show();

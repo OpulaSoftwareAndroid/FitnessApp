@@ -14,11 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainSplashActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-
+        <activity android:name=".MainSelectMentor"></activity>
+        <activity android:name=".selectMentor" />
+        <activity android:name=".MainYourMentorSelect" />
+        <activity android:name=".MainPersonalize_Diet" />
+        <activity android:name=".MainSplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.ACTION-VIEW" />
@@ -26,44 +26,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".MainCountDownTimerActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
-        <activity
-            android:name=".MainHomeScreenActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".MainSubscriptionType"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
+        <activity
+            android:name=".MainCountDownTimerActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainHomeScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainViewProfileActivity"
             android:label="@string/title_activity_main_profile"
-
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainRegistrationActivity"
             android:label="@string/title_activity_main_registration"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainLoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
-
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".MainDietPlanActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".mentorListScreen.MentorListActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-
         <activity
             android:name=".mentorTypeList.MentorTypeListActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-
-
     </application>
 
 </manifest>
