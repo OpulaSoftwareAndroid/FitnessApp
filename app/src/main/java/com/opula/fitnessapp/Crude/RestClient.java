@@ -3,6 +3,7 @@ package com.opula.fitnessapp.Crude;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.AdapterView;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -29,6 +30,9 @@ public class RestClient {
 
     public RestClient(Context context) {
         this.mContext = context;
+    }
+
+    public RestClient(AdapterView.OnItemClickListener onItemClickListener) {
     }
 
     private static void initRestClient() {

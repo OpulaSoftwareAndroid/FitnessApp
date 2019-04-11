@@ -1,9 +1,14 @@
 package com.opula.fitnessapp.Crude;
 
 
-import com.opula.fitnessapp.POJOClasses.MentorListModel.MentorList;
+import com.opula.fitnessapp.POJOClasses.DietPlanListModel.DietplanList;
+import com.opula.fitnessapp.POJOClasses.Foodlist.Breakfast;
+import com.opula.fitnessapp.POJOClasses.MentorListModel.MentorMemberList;
 import com.opula.fitnessapp.POJOClasses.MentorTypeListModel.MentorTypeList;
 import com.opula.fitnessapp.POJOClasses.UserDetailsModel.UserDetailPOJO;
+import com.opula.fitnessapp.POJOClasses.buyPlan.Buyplan;
+import com.opula.fitnessapp.POJOClasses.PlanScheduleListModel.PlanScheduleModel;
+import com.opula.fitnessapp.POJOClasses.subscribe.Subscribe;
 
 import java.util.Map;
 
@@ -22,10 +27,44 @@ public interface Api {
     Call<UserDetailPOJO> getUserDetailByID(@Body Map<String, String> params);
 
     @POST("MentorList.php")
-    Call<MentorList> getMentorList(@Body Map<String, String> params);
+    Call<MentorMemberList> getMentorList(@Body Map<String, String> params);
+
+//    @POST("MentorTypeList.php")
+//    Call<MentorTypeList> getMentorTypeList(@Body Map<String, String> params);
+
+
+
+    @POST("DietPlanList.php")
+    Call<DietplanList> getDietplanList(@Body Map<String, String> params);
+
+
+    @POST("FoodList.php")
+    Call<Breakfast> getBreakfast(@Body Map<String, String> param);
+
+    @POST("SubscribeList.php")
+    Call<Subscribe> getSubscribe(@Body Map<String, String> param);
+
+    @POST("MentorList.php")
+    Call<MentorMemberList> GetMentorList(@Body Map<String, String> params);
+
+    Call<MentorMemberList> getMentorMemberList(Map<String, String> params);
+
+    Call<MentorTypeList> getcallAPIGetMentorTypeList(Map<String, String> params);
 
     @POST("MentorTypeList.php")
     Call<MentorTypeList> getMentorTypeList(@Body Map<String, String> params);
+
+    @POST("BuyPlan.php")
+    Call<Buyplan> GetBuyplan(@Body Map<String, String> params);
+
+    @POST("PlanScheduleList.php")
+    Call<PlanScheduleModel> GetPlanSchedule(@Body Map<String, String> optioMap);
+
+//    @POST("MentorTypeList.php")
+//    Call<MentorMemberList> getMentorMemberList(@Body Map<String, String> optioMap);
+
+
+
 //
 //    @Multipart
 //    @POST("UpdateProfile.php")

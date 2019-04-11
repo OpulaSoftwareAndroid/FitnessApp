@@ -12,6 +12,12 @@ public class Info {
     @SerializedName("RegisterID")
     @Expose
     private String registerID;
+    @SerializedName("DietPlanName")
+    @Expose
+    private String dietPlanName;
+    @SerializedName("Img")
+    @Expose
+    private String img;
 
     public String getDietPlanID() {
         return dietPlanID;
@@ -27,6 +33,22 @@ public class Info {
 
     public void setRegisterID(String registerID) {
         this.registerID = registerID;
+    }
+
+    public String getDietPlanName() {
+        return dietPlanName;
+    }
+
+    public void setDietPlanName(String dietPlanName) {
+        this.dietPlanName = dietPlanName;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
 }

@@ -215,7 +215,7 @@ public class MainRegistrationActivity extends AppCompatActivity {
         btnWorkoutStartTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
+
                 openTimerDialog(btnWorkoutStartTime);
             }
         });
@@ -224,7 +224,7 @@ public class MainRegistrationActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
+
                 openTimerDialog(btnWorkoutEndTime);
             }
         });
@@ -232,7 +232,7 @@ public class MainRegistrationActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
+
                 openTimerDialog(btnRestStartTime);
             }
         });
@@ -241,7 +241,7 @@ public class MainRegistrationActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
+
                 openTimerDialog(btnRestEndTime);
 
             }

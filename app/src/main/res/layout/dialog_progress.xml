@@ -16,13 +16,14 @@
             android:layout_width="80dp"
             android:layout_height="80dp">
 
+
             <com.victor.loading.rotate.RotateLoading
                 android:id="@+id/progressBar_Dialog"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:loading_color="@color/colorAccent"
                 app:loading_speed="10"
-                app:loading_width="10dp"/>
+                app:loading_width="10dp" />
 
         </RelativeLayout>
 

@@ -53,7 +53,6 @@ import java.util.Random;
 import java.util.TimeZone;
 import java.util.regex.Pattern;
 
-
 import static android.content.Context.CLIPBOARD_SERVICE;
 
 
@@ -300,18 +299,7 @@ public class AppGlobal {
         SharedPreferences settings = c.getSharedPreferences(PREFS_NAME,
                 Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
-
         editor.putFloat(key, value);
-        return editor.commit();
-
-    }
-
-    static public boolean removeSharedPreferencebyKey(Context c, String key) {
-
-        SharedPreferences settings = c.getSharedPreferences(PREFS_NAME,
-                Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.remove(key);
         return editor.commit();
 
     }

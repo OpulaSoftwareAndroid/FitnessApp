@@ -37,9 +37,20 @@ public class Constants {
     public static final String TAG_REGISTER_ID = "RegisterID";
     public static final String TAG_VALID_DATA = "ValidData";
    public static final String TAG_MENTOR_TYPE = "MentorType";
+    public static final String TAG_TRAINER_ID = "strTrainerID" ;
+    public static final String TAG_PLAN_TYPE = "PlanType" ;
+    public static final String TAG_PRICE ="Price" ;
+    public static final String TAG_MEMBERSHIP_TYPE = "MembershipType";
+
 
 
     // Shared Stored
-    public static final String STORED_REGISTER_ID = "register_id";
+    public static final String STORED_REGISTER_ID = "strRegisterId";
+
+
+    public static final String SubscribeID = "subscribe_id";
+    public static final String STORE_DATA = "store_data";
+
+
 
 }

@@ -103,7 +103,7 @@ public class MainSplashActivity extends AppCompatActivity {
                     finish();
                 }else
                 {
-                    Intent i = new Intent(MainSplashActivity.this, MainHomeScreenActivity.class);
+                    Intent i = new Intent(MainSplashActivity.this, MainLoginActivity.MainHomeScreenActivity.class);
                     startActivity(i);
                     finish();
 
