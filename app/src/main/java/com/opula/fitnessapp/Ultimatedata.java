@@ -1,6 +1,6 @@
 package com.opula.fitnessapp;
 
-class Ultimatedata  {
+public class Ultimatedata  {
 
     int img;
     String rate;

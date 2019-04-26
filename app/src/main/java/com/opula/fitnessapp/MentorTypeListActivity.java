@@ -3,6 +3,7 @@ package com.opula.fitnessapp;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +16,11 @@ import com.opula.fitnessapp.Crude.RestClient;
 import com.opula.fitnessapp.Crude.SharedPreference;
 import com.opula.fitnessapp.POJOClasses.MentorListModel.Info;
 import com.opula.fitnessapp.POJOClasses.MentorListModel.MentorMemberList;
+import com.opula.fitnessapp.POJOClasses.MentorTypeListModel.MentorTypeList;
+import com.romainpiel.shimmer.Shimmer;
+import com.romainpiel.shimmer.ShimmerTextView;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -54,20 +60,16 @@ public class MentorTypeListActivity extends AppCompatActivity {
 
 
 
-//
-//        ProgressBar progressBar = (ProgressBar)findViewById(R.id.spin_kit);
-//        Sprite doubleBounce = new DoubleBounce();
-//        progressBar.setIndeterminateDrawable(doubleBounce);
-//        progressBar.getProgress();
-
-
 
 
 
 
         getMentorTypeList();
-    }
 
+
+
+
+    }
 
 
     private void getMentorTypeList() {
@@ -86,23 +88,28 @@ public class MentorTypeListActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<MentorMemberList> call, Response<MentorMemberList> response) {
 
+
                     if (response.body() != null) {
+
+
 
                         if (response.body().getStatus() == 1) {
                             adapter.addAll((ArrayList<Info>) response.body().getInfo());
+
+
+
+
                         }
 
 
                         Log.d(TAG, "android the response we get user detail by id  is " + new Gson().toJson(response));
 
 
-                        if (response.body().getStatus() == 1) {
-                            Toast.makeText(MentorTypeListActivity.this, "" + response.body().getMsg(), Toast.LENGTH_SHORT).show();
-                        }
-                        else
-                        {
-                            Toast.makeText(MentorTypeListActivity.this,"",Toast.LENGTH_LONG).show();
-                        }
+
+//                        if (response.body().getStatus() == 1) {
+//                            Toast.makeText(MentorTypeListActivity.this, "" + response.body().getMsg(), Toast.LENGTH_SHORT).show();
+//                        }
+//
 
 
                     }
@@ -115,10 +122,7 @@ public class MentorTypeListActivity extends AppCompatActivity {
                 public void onFailure(Call<MentorMemberList> call, Throwable t) {
 
                 }
-//                @Override
-//                public void onResponse(Call<getMentorTypeList> call, Response<getMentorTypeList> response)
-
-
+//
             });
 
         }

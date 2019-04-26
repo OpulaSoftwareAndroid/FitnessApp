@@ -1,10 +1,9 @@
 
-package com.opula.fitnessapp.POJOClasses.Foodlist; import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+package com.opula.fitnessapp.POJOClasses.Foodlist;
 
 import java.util.List;
-
-;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 public class Info {
 

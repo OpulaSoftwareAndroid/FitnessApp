@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 
 public class SharedPreference {
     public static final String PREFS_NAME = "PREF";
+    private String key;
 
     public SharedPreference() {
         super();
@@ -33,7 +34,6 @@ public class SharedPreference {
         text = settings.getString(key, null);
         return text;
     }
-
     public void clearSharedPreference(Context context) {
         SharedPreferences settings;
         SharedPreferences.Editor editor;

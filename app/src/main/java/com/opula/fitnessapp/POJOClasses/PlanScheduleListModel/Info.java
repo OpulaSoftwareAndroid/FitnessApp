@@ -12,6 +12,9 @@ public class Info {
     @SerializedName("Period")
     @Expose
     private String period;
+    @SerializedName("period_number")
+    @Expose
+    private String periodNumber;
 
     public String getPlanScheduleID() {
         return planScheduleID;
@@ -27,6 +30,14 @@ public class Info {
 
     public void setPeriod(String period) {
         this.period = period;
+    }
+
+    public String getPeriodNumber() {
+        return periodNumber;
+    }
+
+    public void setPeriodNumber(String periodNumber) {
+        this.periodNumber = periodNumber;
     }
 
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/fitness_background">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/green"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Personalize your Diet"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_personalize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

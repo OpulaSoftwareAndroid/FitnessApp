@@ -1,115 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:background="@drawable/shape"
+    android:orientation="horizontal">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivMentor"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginBottom="20dp"
-        android:background="@color/colorWhite"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="10dp">
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="7dp">
 
 
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/ivMentor"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/fitness_background"
-            android:scaleType="centerCrop"
-            app:riv_border_color="@color/green"
-            app:riv_border_width="1dp"
-            app:riv_corner_radius="70dp"
-            app:riv_mutate_background="true"
-            app:riv_oval="true" />
+        <TextView
+            android:id="@+id/textViewMentorName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_regular"
+            android:text="MentorName"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MentorBOD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/readMoreTextViewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_radio"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+        <TextView
+
+            android:id="@+id/txtamount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/bg_rounded_orange"
+
+            android:gravity="center"
+            android:text="Amount"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+
+            <TextView
+
+
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="10dp"
-                android:layout_margin="10dp"
-                android:weightSum="3"
-                android:orientation="horizontal">
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="MRP:"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/tvName"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1.3"
-                    android:text="MentorName"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvDate"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1.7"
-                    android:text="Date"
-                    android:layout_marginLeft="10dp"
-                    android:textColor="@color/gray"
-                    android:textSize="14sp" />
-
-
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/txtMRP"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
-
-                <TextView
-                    android:id="@+id/tvPrice"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.7"
-                    android:text="price"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="14sp" />
-
-
-                <TextView
-                    android:id="@+id/txtbuy"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_weight="0.6"
-                    android:background="@drawable/bg_rounded_orange"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:gravity="center"
-                    android:text="Buy"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="15dp" />
-
-
-            </LinearLayout>
-
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Month:"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+
+
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Total Amount:"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtbuy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_rounded_orange"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Buy"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+
 
     </LinearLayout>
 
 
-</LinearLayout>
+
+
+    </LinearLayout>
+

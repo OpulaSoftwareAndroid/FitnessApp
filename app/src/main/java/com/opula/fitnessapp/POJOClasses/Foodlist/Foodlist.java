@@ -1,5 +1,5 @@
 
-package com.opula.fitnessapp.POJOClasses.Foodlist; ;
+package com.opula.fitnessapp.POJOClasses.Foodlist;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

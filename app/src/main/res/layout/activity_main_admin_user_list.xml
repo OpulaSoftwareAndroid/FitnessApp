@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/fitness_background"
+    tools:context=".Activity.MainAdminActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="List of User's"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@color/green"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_weight="0.4"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:background="@drawable/right_rounded_orange_button"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:text="Edit Calories"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/ic_action_add"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/left_rounded_orange_background"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_action_delete_white"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_weight="1.6"
+        android:layout_height="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="10dp"
+                android:padding="20dp"
+                android:layout_weight="0.7"
+                android:background="@color/transparent_white_percent_55"
+                android:text="Breakfast"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_weight="1.3"
+                android:background="@color/colorWhite"
+                android:text="Calories you gained 250 cl"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="10dp"
+                android:padding="20dp"
+                android:layout_weight="0.7"
+                android:background="@color/transparent_white_percent_55"
+                android:text="Morning Snacks"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_weight="1.3"
+                android:background="@color/colorWhite"
+                android:text="Calories you gained 250 cl"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="1dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="User's Comment"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="1dp"/>
+
+            <EditText
+
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left" android:background="@color/colorWhite"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="10dp"
+                android:padding="20dp"
+                android:layout_weight="0.7"
+                android:background="@color/transparent_white_percent_55"
+                android:text="Lunch"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_weight="1.3"
+                android:background="@color/colorWhite"
+                android:text="Calories you gained 250 cl"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="10dp"
+                android:padding="20dp"
+                android:layout_weight="0.7"
+                android:background="@color/transparent_white_percent_55"
+                android:text="Evening Snacks"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_weight="1.3"
+                android:background="@color/colorWhite"
+                android:text="Calories you gained 250 cl"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="10dp"
+                android:padding="20dp"
+                android:layout_weight="0.7"
+                android:background="@color/transparent_white_percent_55"
+                android:text="Dinner"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_weight="1.3"
+                android:background="@color/colorWhite"
+                android:text="Calories you gained 250 cl"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_rounded_orange"
+        android:text="See User's Progress"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

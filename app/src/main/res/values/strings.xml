@@ -10,5 +10,7 @@
     <string name="Rs">\u20B9</string>
     <string name="pick_image_intent_text">Choose an image</string>
     <string name="walnuts">walnuts</string>
+    <string name="toggle_animation">toggl</string>
+    <string name="shimmer">simmer</string>
 
 </resources>

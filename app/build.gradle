@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.opula.fitnessapp"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -47,6 +47,11 @@ dependencies {
 
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'me.relex:circleindicator:2.1.0'
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
+    implementation 'com.android.support:recyclerview-v7:+'
+
+    implementation 'com.romainpiel.shimmer:library:1.4.0@aar'
+    implementation 'com.thefinestartist:finestwebview:1.2.7'
 
 
 }

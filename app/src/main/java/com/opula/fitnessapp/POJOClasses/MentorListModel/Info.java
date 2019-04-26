@@ -1,5 +1,5 @@
 
-package com.opula.fitnessapp.POJOClasses.MentorListModel; ;
+package com.opula.fitnessapp.POJOClasses.MentorListModel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

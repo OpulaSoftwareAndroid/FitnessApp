@@ -55,7 +55,7 @@
                     android:textSize="11dp" />
 
                 <EditText
-                    android:id="@+id/txtsubId"
+                    android:id="@+id/textViewSubjectID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -123,7 +123,7 @@
 
 
                 <EditText
-                    android:id="@+id/txtplantype"
+                    android:id="@+id/textViewPlanType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -159,7 +159,7 @@
 
 
                 <EditText
-                    android:id="@+id/txtmembership"
+                    android:id="@+id/textViewMemberShipType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -194,7 +194,7 @@
 
 
                 <EditText
-                    android:id="@+id/txtprice"
+                    android:id="@+id/textViewPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -228,7 +228,7 @@
 
 
                 <EditText
-                    android:id="@+id/txtplantypename"
+                    android:id="@+id/textViewPlanTypeName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -261,7 +261,7 @@
 
 
                 <EditText
-                    android:id="@+id/txtmembershipTypename"
+                    android:id="@+id/textViewMembershipTypeName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

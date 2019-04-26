@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-import com.opula.fitnessapp.POJOClasses.subscribe.Info;
+import com.opula.fitnessapp.POJOClasses.Subscribe.Info;
 import com.opula.fitnessapp.R;
 
 import java.util.List;
@@ -37,6 +37,8 @@ public class DialogSubscribeAdapter extends RecyclerView.Adapter<DialogSubscribe
     @Override
     public void onBindViewHolder( ViewHolder viewHolder, int position) {
 
+
+
         viewHolder.txtsubId.setText(info.get(position).getSubscribeID());
         viewHolder.txtname.setText(info.get(position).getName());
         viewHolder.txtplantype.setText(info.get(position).getPlanType());
@@ -59,13 +61,13 @@ public class DialogSubscribeAdapter extends RecyclerView.Adapter<DialogSubscribe
             super(itemView);
 
 
-             txtsubId = itemView.findViewById(R.id.txtsubId);
+             txtsubId = itemView.findViewById(R.id.textViewSubjectID);
               txtname = itemView.findViewById(R.id.txtname);
-              txtplantype = itemView.findViewById(R.id.txtplantype);
-              txtprice = itemView.findViewById(R.id.txtprice);
-              txtmembership = itemView.findViewById(R.id.txtmembership);
-              txtplantypename = itemView.findViewById(R.id.txtplantypename);
-              txtmembershipTypename = itemView.findViewById(R.id.txtmembershipTypename);
+              txtplantype = itemView.findViewById(R.id.textViewPlanType);
+              txtprice = itemView.findViewById(R.id.textViewPrice);
+              txtmembership = itemView.findViewById(R.id.textViewMemberShipType);
+              txtplantypename = itemView.findViewById(R.id.textViewPlanTypeName);
+              txtmembershipTypename = itemView.findViewById(R.id.textViewMembershipTypeName);
 
 
 

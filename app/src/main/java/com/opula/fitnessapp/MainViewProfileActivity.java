@@ -14,12 +14,13 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.google.gson.Gson;
+import com.opula.fitnessapp.Activity.MainCountDownTimerActivity;
 import com.opula.fitnessapp.Crude.AppGlobal;
 import com.opula.fitnessapp.Crude.Constants;
 import com.opula.fitnessapp.Crude.RestClient;
 import com.opula.fitnessapp.Crude.SharedPreference;
 import com.opula.fitnessapp.POJOClasses.UserDetailsModel.UserDetailPOJO;
-import com.opula.fitnessapp.customclass.CustomTextView;
+import com.opula.fitnessapp.CustomClass.CustomTextView;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
@@ -61,7 +62,7 @@ public class MainViewProfileActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainViewProfileActivity.this,MainDietPlanActivity.class);
+                Intent intent=new Intent(MainViewProfileActivity.this, MainMealTypeListActivity.class);
                 startActivity(intent);
             }
         });
@@ -90,7 +91,7 @@ public class MainViewProfileActivity extends AppCompatActivity {
 
                                 String strRegisterId=jsonObjectInfo.getString(Constants.TAG_REGISTER_ID);
                                 sharedPreference.save(getApplicationContext(),strRegisterId,Constants.STORED_REGISTER_ID);
-                                Intent intent=new Intent(MainViewProfileActivity.this,MainCountDownTimerActivity.class);
+                                Intent intent=new Intent(MainViewProfileActivity.this, MainCountDownTimerActivity.class);
                                 startActivity(intent);
                                 finish();
 //                                Toast.makeText(MainViewProfileActivity.this,strMessage,Toast.LENGTH_LONG).show();
@@ -207,11 +208,12 @@ public class MainViewProfileActivity extends AppCompatActivity {
 
         };
 
-        Fitness_Application.getInstance().addToRequestQueue(req, TAG);
+        FitnessApplication.getInstance().addToRequestQueue(req, TAG);
 
     }
 
     private void getUserDetailsByID() {
+
         String strRegisterID = sharedPreference.getValue(MainViewProfileActivity.this, Constants.STORED_REGISTER_ID);
 
         if (AppGlobal.isNetwork(this)) {

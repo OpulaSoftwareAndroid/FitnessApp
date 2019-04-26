@@ -9,7 +9,7 @@
     android:layout_marginBottom="5dp"
     android:showDividers="middle"
     android:background="@drawable/fitness_background"
-    tools:context=".Main_Dietdetail">
+    tools:context=".MainDietDetail">
 
 
 

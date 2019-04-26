@@ -4,7 +4,7 @@ public class Constants {
 
  //   http://omgameworld.com/Fitness/AndroidClass/UserRegister.php​​​​​​​
     public static final String API_BASE_URL = "http://omgameworld.com/Fitness/AndroidClass/";
-//   public static final String API_BASE_URL = "http://192.168.0.92/fitness/AndroidClass/";
+
 
     public static final String API_USER_REGISTER = API_BASE_URL + "UserRegister.php";
     public static final String API_USER_LOGIN = API_BASE_URL + "UserLogin.php";
@@ -39,8 +39,10 @@ public class Constants {
    public static final String TAG_MENTOR_TYPE = "MentorType";
     public static final String TAG_TRAINER_ID = "strTrainerID" ;
     public static final String TAG_PLAN_TYPE = "PlanType" ;
+    public static final String TAG_PLAN_ID = "PlanID" ;
     public static final String TAG_PRICE ="Price" ;
     public static final String TAG_MEMBERSHIP_TYPE = "MembershipType";
+    public static final String TAG_MESSAGE = "Message" ;
 
 
 
@@ -51,6 +53,14 @@ public class Constants {
     public static final String SubscribeID = "subscribe_id";
     public static final String STORE_DATA = "store_data";
 
+
+
+    public static final String TAG_BREAKFAST_ID = "BreakfastID" ;
+    public static final String TAG_LUNCH_ID = "LunchID";
+    public static final String TAG_MORNINGSNACK_ID = "MorningSnackID" ;
+    public static final String TAG_AFTERNOONSNACK_ID = "AfternoonSnackID";
+    public static final String TAG_DINNERSNACK_ID = "DinnerSnackID" ;
+    public static final String TAG_PLANSCHEDULE_ID = "Planschedule";
 
 
 }

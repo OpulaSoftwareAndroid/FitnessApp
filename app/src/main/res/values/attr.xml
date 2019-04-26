@@ -55,4 +55,17 @@
         <attr name="min_adapter_stack" format="integer" />
         <attr name="max_visible" format="integer" />
     </declare-styleable>
+
+
+
+
+        <declare-styleable name="ShimmerView">
+            <attr name="reflectionColor" format="color"/>
+        </declare-styleable>
+
+    <declare-styleable name="RainbowTextView">
+        <attr name="colorSpeed" format="dimension" />
+        <attr name="colorSpace" format="dimension" />
+    </declare-styleable>
+
 </resources>

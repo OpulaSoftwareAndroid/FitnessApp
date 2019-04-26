@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-class UltimateAdapter extends RecyclerView.Adapter<UltimateAdapter.ViewHolder> {
+public class UltimateAdapter extends RecyclerView.Adapter<UltimateAdapter.ViewHolder> {
 
     Context context;
     LayoutInflater inflater;

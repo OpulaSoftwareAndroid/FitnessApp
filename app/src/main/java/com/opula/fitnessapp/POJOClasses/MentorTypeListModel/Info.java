@@ -1,9 +1,10 @@
+
 package com.opula.fitnessapp.POJOClasses.MentorTypeListModel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Info extends com.opula.fitnessapp.POJOClasses.PlanScheduleListModel.Info {
+public class Info {
 
     @SerializedName("MentorTypeID")
     @Expose
@@ -23,8 +24,6 @@ public class Info extends com.opula.fitnessapp.POJOClasses.PlanScheduleListModel
     @SerializedName("Message")
     @Expose
     private String message;
-
-
 
     public String getMentorTypeID() {
         return mentorTypeID;

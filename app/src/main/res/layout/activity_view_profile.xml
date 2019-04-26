@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content">
 
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="1"
@@ -74,7 +74,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_height="wrap_content">
 
-                    <com.opula.fitnessapp.customclass.CustomTextView
+                    <com.opula.fitnessapp.CustomClass.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -82,7 +82,7 @@
                         android:text="Date Of Birth : "
                         android:textColor="@color/colorBlack" />
 
-                    <com.opula.fitnessapp.customclass.CustomTextView
+                    <com.opula.fitnessapp.CustomClass.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/customTextViewBirthDate"
@@ -97,7 +97,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_height="wrap_content">
 
-                    <com.opula.fitnessapp.customclass.CustomTextView
+                    <com.opula.fitnessapp.CustomClass.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -105,7 +105,7 @@
                         android:text="Instructor "
                         android:textColor="@color/colorBlack" />
 
-                    <com.opula.fitnessapp.customclass.CustomTextView
+                    <com.opula.fitnessapp.CustomClass.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sima Barret"
@@ -139,7 +139,7 @@
                     android:orientation="horizontal"
                     android:layout_height="wrap_content">
 
-                    <com.opula.fitnessapp.customclass.CustomTextView
+                    <com.opula.fitnessapp.CustomClass.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:maxLines="1"
@@ -149,7 +149,7 @@
                         android:textColor="@color/colorPrimary" />
 
 
-                    <com.opula.fitnessapp.customclass.CustomTextView
+                    <com.opula.fitnessapp.CustomClass.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="cm"
@@ -164,7 +164,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_height="40dp"/>
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -174,7 +174,7 @@
                     android:text="82 "
                     android:textColor="@color/colorPrimary" />
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="kg"
@@ -188,7 +188,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_height="wrap_content">
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -200,7 +200,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -267,7 +267,7 @@
                 android:orientation="horizontal"
                 android:weightSum="2">
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -276,7 +276,7 @@
                     android:text="Basal Metabolic Rate (BMR)"
                     android:textColor="@color/colorBlack" />
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:id="@+id/customTextViewBMR"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -300,7 +300,7 @@
                 android:orientation="horizontal"
                 android:weightSum="2">
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -309,7 +309,7 @@
                     android:text="Body Mass Index (BMI)"
                     android:textColor="@color/colorBlack" />
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:id="@+id/customTextViewBMI"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -332,7 +332,7 @@
                 android:orientation="horizontal"
                 android:weightSum="2">
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -341,7 +341,7 @@
                     android:text="Ideal Body Weight (IBW)"
                     android:textColor="@color/colorBlack" />
 
-                <com.opula.fitnessapp.customclass.CustomTextView
+                <com.opula.fitnessapp.CustomClass.CustomTextView
                     android:id="@+id/customTextViewIBW"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="Mentor"
                 android:textColor="@color/colorWhite" />
 
@@ -78,7 +78,7 @@
                 android:layout_gravity="start"
                 android:id="@+id/btnSelectDietPlan"
                 android:layout_weight="1.5"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="Select Diet Plan"
                 android:textColor="@color/colorWhite" />
 
@@ -103,7 +103,7 @@
                 android:layout_gravity="start"
                 android:id="@+id/btnViewSubscriptionPlan"
                 android:layout_weight="1.5"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="View Subscription Plan"
                 android:textColor="@color/colorWhite" />
 
@@ -127,7 +127,7 @@
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
                 android:visibility="gone"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="Upcoming birthday"
                 android:textColor="@color/colorWhite" />
 
@@ -151,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="Upcoming Membership Expire"
                 android:textColor="@color/colorWhite" />
 
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="Upcoming Payment Due"
                 android:textColor="@color/colorWhite" />
 
@@ -195,11 +195,12 @@
             android:weightSum="2">
 
             <Button
+                android:id="@+id/btnCreatePlan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="CREATE A PLAN"
                 android:textColor="@color/colorWhite" />
 
@@ -224,7 +225,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="REGISTERED USERS"
                 android:textColor="@color/colorWhite" />
 
@@ -248,7 +249,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="franchise owners"
                 android:textColor="@color/colorWhite" />
 
@@ -273,7 +274,7 @@
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
                 android:id="@+id/btnViewProfile"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="View Profile"
                 android:textColor="@color/colorWhite" />
 
@@ -298,7 +299,7 @@
                 android:layout_gravity="start"
                 android:layout_weight="1.5"
                 android:id="@+id/btnLogout"
-                android:background="@drawable/right_rounded_yellow_button"
+                android:background="@drawable/right_rounded_orange_button"
                 android:text="Logout"
                 android:textColor="@color/colorWhite" />
 

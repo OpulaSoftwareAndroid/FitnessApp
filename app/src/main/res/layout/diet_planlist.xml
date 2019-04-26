@@ -11,20 +11,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top|right"
             android:layout_marginTop="20dp"
-            android:background="@drawable/right_rounded_yellow_button"
+            android:background="@drawable/right_rounded_orange_button"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:backgroundTint="@color/colorWhite"
             android:fontFamily="@font/poppins_regular"/>
 
 
-        <ImageView
-            android:id="@+id/img"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_gravity="top|left"
-            android:layout_marginLeft="30dp"
-            android:gravity="right" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:gravity="left" />
 
 
 

@@ -41,16 +41,9 @@ public class MealTypeListAdapter extends RecyclerView.Adapter<MealTypeListAdapte
     String type;
 
 
-    AlertDialog alertDialog,alertDialog1;
-    RecyclerView recycler_dialog,dialog_diet_recycler,diet_recycler;
-    LinearLayout linear;
+    AlertDialog alertDialog;
+    RecyclerView  recylerViewDietFoodTypeList;
 
-    String BreakfastID  ;
-    String DinnerSnackID  ;
-    String AfternoonSnackID  ;
-    String MorningSnackID  ;
-    String LunchID  ;
-    String strRegisterID;
 
     List<Foodlist> foodlist = new ArrayList<>();
 
@@ -68,8 +61,6 @@ public class MealTypeListAdapter extends RecyclerView.Adapter<MealTypeListAdapte
         this.context = context;
         this.listfoodlist = listfoodlist;
         arrayListFoodID=new ArrayList<>();
-
-
 
     }
 
@@ -95,78 +86,48 @@ public class MealTypeListAdapter extends RecyclerView.Adapter<MealTypeListAdapte
         if(!arrayListFoodID.contains(info.getFoodID()))
         {
             arrayListFoodID.add(info.getFoodID());
-
         }
 
         viewHolder.btnFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
                 Log.d(TAG,"jigar the clickes item is "+ info.getFoodID());
-
-
-//
-//
-//                int style = 0;
-//                if (style == 1) {
-//                    buildDialog(R.style.DialogTheme, "Left - Right Animation!");
-//                } else if (style == 2) {
-//                    buildDialog(R.style.DialogAnimation, "Fade In - Fade Out Animation!");
-//                } else if (style == 3) {
-//                    buildDialog(R.style.DialogAnimation_2, "Up - Down Animation!");
-//                } else {
-//                    buildDialog(0, "Normal Dialog (no animation)");
-//                }
-//
-               showDialog(context,listfoodlist,foodlist,info.getFoodID());
-
-
+                showDialog(context,listfoodlist,foodlist,info.getFoodID());
 
             }
         });
 
-
-
     }
-//
-//    private void buildDialog(int dialogTheme, String s) {
-//
-//
-//        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-//        builder.setMessage(type);
-//        AlertDialog dialog = builder.create();
-//        dialog.getWindow().getAttributes().windowAnimations = animationSource;
-//        dialog.show();
-//    }
 
 
 
     private void showDialog(Context context, List<Info> listfoodlist ,List<Foodlist> foodlist,String strFoodID) {
 
-
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         final LayoutInflater inflater = LayoutInflater.from(context);
         View dialogView = inflater.inflate(R.layout.dialog_dietplan_recycler, null);
         alertDialogBuilder.setView(dialogView);
-        alertDialogBuilder.setCancelable(true);
+         alertDialogBuilder.setCancelable(true);
 
         alertDialog = alertDialogBuilder.create();
 
-        dialog_diet_recycler = (RecyclerView) dialogView.findViewById(R.id.dialog_diet_recycler);
+        recylerViewDietFoodTypeList = (RecyclerView) dialogView.findViewById(R.id.recylerViewDietFoodTypeList);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(Objects.requireNonNull(context).getApplicationContext());
-        linearLayoutManager.setStackFromEnd(true);
-        dialog_diet_recycler.setLayoutManager(linearLayoutManager);
 
-        DialogMainDietPlanAdapter dialogMainDietPlanAdapter = new DialogMainDietPlanAdapter(context, listfoodlist, foodlist,strFoodID);
-        dialog_diet_recycler.setAdapter(dialogMainDietPlanAdapter);
+        linearLayoutManager.setStackFromEnd(true);
+        recylerViewDietFoodTypeList.setLayoutManager(linearLayoutManager);
+
+        DialogMainDietPlanAdapter dialogMainDietPlanAdapter = new DialogMainDietPlanAdapter(context, listfoodlist
+                , foodlist,strFoodID);
+        recylerViewDietFoodTypeList.setAdapter(dialogMainDietPlanAdapter);
 
         dialogMainDietPlanAdapter.notifyDataSetChanged();
 
         Window window = alertDialog.getWindow();
         WindowManager.LayoutParams param = window.getAttributes();
-        param.gravity = Gravity.TOP;
+        param.gravity = Gravity.CENTER;
         param.flags &= ~WindowManager.LayoutParams.FLAG_DIM_BEHIND;
 
         alertDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
@@ -209,9 +170,9 @@ public class MealTypeListAdapter extends RecyclerView.Adapter<MealTypeListAdapte
             btnFood = (Button) itemView.findViewById(R.id.btnFood );
             btnSubmit = (Button)itemView.findViewById(R.id.btnSubmit);
 
-            diet_recycler = (RecyclerView)itemView.findViewById(R.id.diet_recycler);
+            diet_recycler = (RecyclerView)itemView.findViewById(R.id.recylerViewMealType);
             recycler_dialog = (RecyclerView)itemView.findViewById(R.id.recycler_dialog);
-            dialog_diet_recycler = (RecyclerView)itemView.findViewById(R.id.dialog_diet_recycler);
+            dialog_diet_recycler = (RecyclerView)itemView.findViewById(R.id.recylerViewDietFoodTypeList);
 
 
 

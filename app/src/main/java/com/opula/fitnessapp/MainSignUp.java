@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+
 import com.opula.fitnessapp.Adapter.ViewPagerAdapter;
 
 import androidx.annotation.RequiresApi;
@@ -25,6 +26,7 @@ import androidx.annotation.RequiresApi;
 
 
 public class MainSignUp extends AppCompatActivity {
+
 
 
     ViewPager viewPager;
@@ -52,18 +54,21 @@ public class MainSignUp extends AppCompatActivity {
         txt = (TextView) findViewById(R.id.txt);
 
 
-        @SuppressLint("ResourceType") final Animation fade_in = AnimationUtils.loadAnimation(getApplicationContext(),
-                R.animator.fade_in);
-        txt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                txt.setVisibility(View.VISIBLE);
-                txt.startAnimation(fade_in);
-                fade_in.getDuration();
-            }
-        });
 
-        @SuppressLint("ResourceType") final Animation fade_out = AnimationUtils.loadAnimation(getApplicationContext(),R.animator.fade_out);
+
+//
+//        @SuppressLint("ResourceType") final Animation fade_in = AnimationUtils.loadAnimation(getApplicationContext(),
+//                R.animator.fade_in);
+//        txt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                txt.setVisibility(View.VISIBLE);
+//                txt.startAnimation(fade_in);
+//                fade_in.getDuration();
+//            }
+//        });
+//
+//        @SuppressLint("ResourceType") final Animation fade_out = AnimationUtils.loadAnimation(getApplicationContext(),R.animator.fade_out);
 
 
         txt.addTextChangedListener(new TextWatcher() {
@@ -128,6 +133,7 @@ public class MainSignUp extends AppCompatActivity {
             public void onPageSelected(int position) {
 
                 for(int i = 0; i< dotscount; i++){
+
                     dots[i].setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.nonactive_dot));
                 }
 
@@ -143,8 +149,6 @@ public class MainSignUp extends AppCompatActivity {
         });
 
     }
-
-
 
 
 
