@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="17eddc33-0989-421b-99b5-328bfaf04496" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/dictionaries/Pruthvi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/DialogMainDietPlanAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/MorningsnackAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/PlanScheduleAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/RecyclerPlanTypeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/DialogMainDietPlanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainPersonalizeDiet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MoneyValueFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/selectedfood/SelectedFood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/RadioAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/anim/slide_bottom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/anim/slide_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/anim/slide_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/anim/slide_up.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/card.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_personalize_diet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/dialog_dietplan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/dialog_dietplan_recycler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/dialog_foodlist.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/personalizediet_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/recycler_radiogroup_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/recycler_schedule_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/spin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/DialogSubscribeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/DialogSubscribeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/DietPlanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/DietPlanAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/DietPlanVideoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/DietPlanVideoAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/MainSubscribeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/MainSubscribeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/MentorSubTypeListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/MentorSubTypeListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/PlanListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/PlanListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/RecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/MainDietDetailAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Crude/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Crude/Api.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Crude/AppGlobal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Crude/AppGlobal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Crude/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Crude/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Crude/SharedPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Crude/SharedPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Dialog_subscribeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Dialog_subscribeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainDiet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainDiet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainDietPlanActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainDietPlanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Adapter/MainDietPlanAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainLoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainLoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainRegistrationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainRegistrationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainSelectMentor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainSplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainSplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainViewProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MainViewProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Main_Dietdetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/Main_Dietdetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MentorSubTypeListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MentorSubTypeListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MentorTypeListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/MentorTypeListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/AfternoonSnack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/AfternoonSnack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Breakfast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Breakfast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Dinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Dinner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Foodlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Foodlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Launch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/Launch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/MorningSnack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/Foodlist/MorningSnack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/MentorListModel/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/MentorListModel/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/MentorListModel/MentorMemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/MentorListModel/MentorMemberList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/MentorTypeListModel/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/MentorTypeListModel/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/MentorTypeListModel/MentorTypeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/MentorTypeListModel/MentorTypeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/PlanScheduleListModel/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/PlanScheduleListModel/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/PlanScheduleListModel/PlanScheduleModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/POJOClasses/PlanScheduleListModel/PlanScheduleModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/customclass/RoundedImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opula/fitnessapp/customclass/RoundedImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/animator/fade_in.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/animator/fade_out.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/left_rounded_sky_blue_edittext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/left_rounded_sky_blue_edittext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main_diet_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_diet_plan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main_home_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_home_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main_personalize__diet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_plan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main_select_mentor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_sign_up.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_mentor_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_mentor_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_mentor_type_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_mentor_type_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_registration_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_registration_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/diet_detail_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/diet_detail_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/diet_planlist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/diet_planlist.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/diet_planlist2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/diet_planlist2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/list_item_mentor_type.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/list_item_mentor_type.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/mian_diet_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/layout_dietplan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/plan_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/plan_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/attr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/attr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="712208601">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="4" />
+    <option name="width" value="1386" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17eddc33-0989-421b-99b5-328bfaf04496" name="Default Changelist" comment="" />
+      <created>1556175490074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556175490074</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32980332" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.3295082" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

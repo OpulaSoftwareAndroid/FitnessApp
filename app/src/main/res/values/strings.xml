@@ -12,5 +12,7 @@
     <string name="walnuts">walnuts</string>
     <string name="toggle_animation">toggl</string>
     <string name="shimmer">simmer</string>
+    <string name="shimmer_1">simmer</string>
+
 
 </resources>
