@@ -134,7 +134,7 @@ public class MainMealTypeListActivity extends AppCompatActivity {
                         if (response.body().getStatus() == 1) {
                             AppGlobal.hideProgressDialog(MainMealTypeListActivity.this);
 
-                        mealTypeListAdapter = new MealTypeListAdapter(MainMealTypeListActivity.this,response.body().getInfo());
+                        mealTypeListAdapter = new MealTypeListAdapter(MainMealTypeListActivity.this,response.body().getInfo(),btnSubmit);
                         LinearLayoutManager horizontal = new LinearLayoutManager(MainMealTypeListActivity.this,LinearLayoutManager.VERTICAL,false);
                         recylerViewMealType.setLayoutManager(horizontal);
                         recylerViewMealType.setAdapter(mealTypeListAdapter);

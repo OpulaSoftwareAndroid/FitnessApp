@@ -16,24 +16,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.MainAdminUserListActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            >
+        <activity android:name=".Activity.MainKnowYourDietPlanActivity">
 
         </activity>
+        <activity
+            android:name=".Activity.MainAdminUserListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
             android:name=".Activity.MainAdminActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
-        <activity android:name=".Activity.MainHomeScreenActivity" />
-        <activity android:name=".MainPersonalizeDiet" />
-        <activity android:name=".MainDietDetail" />
-        <activity android:name=".MentorTypeListActivity" />
-        <activity android:name=".Activity.MainUltimateTargetActivity" />
-        <activity
-            android:name=".Activity.MainSplashActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".Activity.MainHomeScreenActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.ACTION-VIEW" />
@@ -43,6 +35,13 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".MainPersonalizeDiet" />
+        <activity android:name=".MainDietDetail" />
+        <activity android:name=".MentorTypeListActivity"></activity>
+        <activity android:name=".Activity.MainUltimateTargetActivity" />
+        <activity
+            android:name=".Activity.MainSplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
             android:name=".MainLoginActivity"
             android:hardwareAccelerated="true"
@@ -63,18 +62,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity.MainCreateDietPlanList"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
+        </activity>
         <activity
             android:name=".MainMealTypeListActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".DialogSubscribeType"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
         <activity
             android:name=".MentorSubTypeListActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />

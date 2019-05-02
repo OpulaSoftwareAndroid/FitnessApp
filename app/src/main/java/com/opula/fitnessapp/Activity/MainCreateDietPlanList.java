@@ -51,10 +51,6 @@ public class MainCreateDietPlanList extends AppCompatActivity {
 
     List<Info> data = new ArrayList<>();
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,9 +78,9 @@ public class MainCreateDietPlanList extends AppCompatActivity {
 
     private void getDietPlanList() {
 
-        String strRegisterID = sharedPreference.getValue(MainCreateDietPlanList.this, Constants.STORED_REGISTER_ID);
+    //    String strRegisterID = sharedPreference.getValue(MainCreateDietPlanList.this, Constants.STORED_REGISTER_ID);
 
-     //               String strRegisterID ="85475825";
+                  String strRegisterID ="85475825";
 
 
                     if (AppGlobal.isNetwork(this)) {

@@ -53,21 +53,11 @@ public class MentorTypeListActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-
-
         adapter = new MentorTypeListAdapter(this);
         lvMentor.setAdapter(adapter);
 
 
-
-
-
-
-
         getMentorTypeList();
-
-
-
 
     }
 
@@ -91,26 +81,15 @@ public class MentorTypeListActivity extends AppCompatActivity {
 
                     if (response.body() != null) {
 
-
-
                         if (response.body().getStatus() == 1) {
                             adapter.addAll((ArrayList<Info>) response.body().getInfo());
-
-
-
-
                         }
-
-
                         Log.d(TAG, "android the response we get user detail by id  is " + new Gson().toJson(response));
 
-
-
-//                        if (response.body().getStatus() == 1) {
+                        //                        if (response.body().getStatus() == 1) {
 //                            Toast.makeText(MentorTypeListActivity.this, "" + response.body().getMsg(), Toast.LENGTH_SHORT).show();
 //                        }
 //
-
 
                     }
                 }

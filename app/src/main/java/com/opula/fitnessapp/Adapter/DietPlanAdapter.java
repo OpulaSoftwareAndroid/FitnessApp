@@ -1,6 +1,7 @@
 package com.opula.fitnessapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
+import com.opula.fitnessapp.Activity.MainKnowYourDietPlanActivity;
 import com.opula.fitnessapp.POJOClasses.DietPlanListModel.Info;
 import com.opula.fitnessapp.R;
 import com.squareup.picasso.Picasso;
@@ -48,10 +51,16 @@ public class DietPlanAdapter extends RecyclerView.Adapter<DietPlanAdapter.ViewHo
 
         Picasso.with(context)
                 .load(data.get(position).getImg())
-                .into(viewHolder.img);
+                .into(viewHolder.imageViewDietImage);
 
 
-
+        viewHolder.btndiet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context, MainKnowYourDietPlanActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -62,7 +71,9 @@ public class DietPlanAdapter extends RecyclerView.Adapter<DietPlanAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         Button btndiet;
-        ImageView img;
+        ImageView imageViewDietImage;
+        LinearLayout linearLayoutDietPlanList;
+
 
 
 
@@ -71,8 +82,8 @@ public class DietPlanAdapter extends RecyclerView.Adapter<DietPlanAdapter.ViewHo
             super(itemView);
 
             btndiet = (Button)itemView.findViewById(R.id.btndiet);
-            img = (ImageView)itemView.findViewById(R.id.img);
-
+            imageViewDietImage = (ImageView)itemView.findViewById(R.id.img);
+            linearLayoutDietPlanList=itemView.findViewById(R.id.linearLayoutDietPlanList);
         }
     }
 }

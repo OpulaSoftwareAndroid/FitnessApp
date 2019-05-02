@@ -1,7 +1,9 @@
 package com.opula.fitnessapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +13,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.opula.fitnessapp.Crude.Constants;
 import com.opula.fitnessapp.POJOClasses.PlanScheduleListModel.Info;
 import com.opula.fitnessapp.R;
 
@@ -57,25 +60,31 @@ public class RecyclerPlanTypeAdapter extends RecyclerView.Adapter<RecyclerPlanTy
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int position) {
 
-
-
-
         Log.v(TAG, "skajal the response periodnumber is" + infolist.get(position).getPeriod());
         final Info planlist = infolist.get(position);
         viewHolder.txtplanName.setText(planlist.getPeriod());
-
         viewHolder.radio.setChecked(true);
-
-
         viewHolder.radio.setChecked(position == mSelectedItem);
-
-
         String str = viewHolder.radio.getText().toString();
-        Toast.makeText(context,"selected radio button " + str , Toast.LENGTH_LONG);
+//        Toast.makeText(context,"selected radio button " + str , Toast.LENGTH_LONG).show();
 
+        viewHolder.radio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG,"jigar the selected radio position button we have is "+position);
+                Log.d(TAG,"jigar the selected radio item value we have is "+infolist.get(position).getPeriodNumber());
+
+                Intent intent = new Intent("selected_radio");
+                intent.putExtra(Constants.TAG_PERIOD_NUMBER,infolist.get(position).getPeriodNumber());
+                LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
+                //                mSelectedItem = position;
+//                notifyDataSetChanged();
+            }
+        });
 
 
     }
+
 
     @Override
     public int getItemCount() {
@@ -90,22 +99,18 @@ public class RecyclerPlanTypeAdapter extends RecyclerView.Adapter<RecyclerPlanTy
 
             super(itemView);
 
-
             txtplanName = (TextView) itemView.findViewById(R.id.txtplanName);
-
             radio = (RadioButton) itemView.findViewById(R.id.radio);
 
 
-            View.OnClickListener clickListener = new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mSelectedItem = getAdapterPosition();
+//
+//            View.OnClickListener clickListener = new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                }
+//            };
+//            itemView.setOnClickListener(clickListener);
 
-                    notifyDataSetChanged();
-                }
-            };
-            itemView.setOnClickListener(clickListener);
-            radio.setOnClickListener(clickListener);
         }
     }
 

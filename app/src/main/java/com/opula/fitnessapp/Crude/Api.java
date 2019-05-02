@@ -6,6 +6,7 @@ import com.opula.fitnessapp.POJOClasses.DietPlanListModel.DietplanList;
 import com.opula.fitnessapp.POJOClasses.FitnessVideoListModel.FitnessVideoModel;
 import com.opula.fitnessapp.POJOClasses.Foodlist.Breakfast;
 import com.opula.fitnessapp.POJOClasses.Foodlist.Foodlist;
+import com.opula.fitnessapp.POJOClasses.KnowYourDietPlanModel.KnowYourDietModel;
 import com.opula.fitnessapp.POJOClasses.MentorListModel.MentorMemberList;
 import com.opula.fitnessapp.POJOClasses.MentorTypeListModel.MentorTypeList;
 import com.opula.fitnessapp.POJOClasses.UserDetailsModel.UserDetailPOJO;
@@ -43,6 +44,9 @@ public interface Api {
 
     @POST("DietPlanList.php")
     Call<DietplanList> getDietplanList(@Body Map<String, String> params);
+
+    @POST("DoDietPlanList.php")
+    Call<KnowYourDietModel> getKnowYourDietPlanList(@Body Map<String, String> params);
 
 
     @POST("FoodList.php")

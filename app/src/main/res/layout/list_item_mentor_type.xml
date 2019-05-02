@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
     android:background="@drawable/shape"
-    android:orientation="horizontal">
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
 
-
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <de.hdodenhof.circleimageview.CircleImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -30,9 +31,15 @@
         android:padding="7dp">
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
         <TextView
             android:id="@+id/textViewMentorName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:fontFamily="@font/poppins_regular"
             android:text="MentorName"
@@ -41,47 +48,28 @@
 
         <TextView
             android:id="@+id/MentorBOD"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins_regular"
             android:textColor="@color/gray"
             android:textSize="14sp" />
-
+        </LinearLayout>
         <com.borjabravo.readmoretextview.ReadMoreTextView
             android:id="@+id/readMoreTextViewDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp" />
+    </LinearLayout>
 
+</LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_radio"
+     <Spinner
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="5dp">
-
-
-        </android.support.v7.widget.RecyclerView>
-
-
-
-
-        <TextView
-
-            android:id="@+id/txtamount"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@drawable/bg_rounded_orange"
-
-            android:gravity="center"
-            android:text="Amount"
-            android:textColor="@color/colorWhite"
-            android:textSize="15dp"
-            android:textStyle="bold" />
+            android:padding="20dp"
+            android:id="@+id/spinnerPeriodNumber"
+            android:layout_height="wrap_content"/>
 
 
         <LinearLayout
@@ -100,17 +88,16 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_regular"
                 android:hint="MRP:"
-                android:textColor="@color/colorAccent"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtMRP"
+                android:id="@+id/textViewMRP"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_regular"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/Color_Gray"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
@@ -134,17 +121,17 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_regular"
                 android:hint="Month:"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/Color_Gray"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtMonth"
+                android:id="@+id/textViewMonth"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_regular"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/Color_Gray"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
@@ -174,7 +161,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/totalAmount"
+                android:id="@+id/textViewTotalAmount"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -188,11 +175,12 @@
 
 
         <TextView
-            android:id="@+id/txtbuy"
-            android:layout_width="150dp"
+            android:id="@+id/textViewBuy"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
             android:background="@drawable/bg_rounded_orange"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center"
@@ -202,9 +190,3 @@
 
 
     </LinearLayout>
-
-
-
-
-    </LinearLayout>
-

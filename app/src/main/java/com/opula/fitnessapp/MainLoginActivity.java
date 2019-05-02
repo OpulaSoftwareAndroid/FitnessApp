@@ -36,7 +36,6 @@ public class MainLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_main);
-
         editTextMobileNumber =findViewById(R.id.editTextMobileNumber);
         editTextPassword=findViewById(R.id.editTextPassword);
         btnSubmit=findViewById(R.id.btnSubmit);
@@ -49,24 +48,24 @@ public class MainLoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
+        btnSubmit.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
                 if(editTextMobileNumber.getText().toString().equals(""))
                 {
                     editTextMobileNumber.setError("Please Enter Valid Phone Number");
                 }else if(editTextPassword.getText().toString().equals(""))
                 {
                     editTextPassword.setError("Please Enter Valid Password");
-
                 }else
                 {
                     strPassword=editTextPassword.getText().toString();
                     strMobileNumber= editTextMobileNumber.getText().toString();
                     setSignInUser();
                 }
-
             }
         });
     }

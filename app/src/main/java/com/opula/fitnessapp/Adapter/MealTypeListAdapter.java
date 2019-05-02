@@ -54,13 +54,15 @@ public class MealTypeListAdapter extends RecyclerView.Adapter<MealTypeListAdapte
     List<Launch> launchList = new ArrayList<>();
     String TAG = "MealTypeListAdapter";
     private int animationSource;
+    Button btnSubmitDiet;
 
 
-    public MealTypeListAdapter(Context context, List<Info> listfoodlist) {
+    public MealTypeListAdapter(Context context, List<Info> listfoodlist,Button btnSubmitDiet) {
 
         this.context = context;
         this.listfoodlist = listfoodlist;
         arrayListFoodID=new ArrayList<>();
+        this.btnSubmitDiet=btnSubmitDiet;
 
     }
 
@@ -93,7 +95,7 @@ public class MealTypeListAdapter extends RecyclerView.Adapter<MealTypeListAdapte
             public void onClick(View v) {
 
                 Log.d(TAG,"jigar the clickes item is "+ info.getFoodID());
-                showDialog(context,listfoodlist,foodlist,info.getFoodID());
+                showDialog(context,listfoodlist,foodlist,info.getFoodID(),btnSubmitDiet);
 
             }
         });
@@ -102,25 +104,25 @@ public class MealTypeListAdapter extends RecyclerView.Adapter<MealTypeListAdapte
 
 
 
-    private void showDialog(Context context, List<Info> listfoodlist ,List<Foodlist> foodlist,String strFoodID) {
+    private void showDialog(Context context, List<Info> listfoodlist ,List<Foodlist> foodlist,String strFoodID,Button btnSubmitDiet) {
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         final LayoutInflater inflater = LayoutInflater.from(context);
         View dialogView = inflater.inflate(R.layout.dialog_dietplan_recycler, null);
         alertDialogBuilder.setView(dialogView);
-         alertDialogBuilder.setCancelable(true);
+        alertDialogBuilder.setCancelable(true);
 
         alertDialog = alertDialogBuilder.create();
 
         recylerViewDietFoodTypeList = (RecyclerView) dialogView.findViewById(R.id.recylerViewDietFoodTypeList);
-
+        LinearLayout linearLayoutAddUpdateFood=dialogView.findViewById(R.id.linearLayoutAddUpdateFood);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(Objects.requireNonNull(context).getApplicationContext());
 
         linearLayoutManager.setStackFromEnd(true);
         recylerViewDietFoodTypeList.setLayoutManager(linearLayoutManager);
 
         DialogMainDietPlanAdapter dialogMainDietPlanAdapter = new DialogMainDietPlanAdapter(context, listfoodlist
-                , foodlist,strFoodID);
+                , foodlist,strFoodID,linearLayoutAddUpdateFood,btnSubmitDiet,alertDialog);
         recylerViewDietFoodTypeList.setAdapter(dialogMainDietPlanAdapter);
 
         dialogMainDietPlanAdapter.notifyDataSetChanged();

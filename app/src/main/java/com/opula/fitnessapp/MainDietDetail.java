@@ -46,9 +46,6 @@ public class MainDietDetail extends AppCompatActivity {
 
 
         txt1 = (TextView)findViewById(R.id.txt1);
-        diet1 = (TextView)findViewById(R.id.diet1);
-        diet2 = (TextView)findViewById(R.id.diet2);
-        diet3 = (TextView)findViewById(R.id.diet3);
 
 
 

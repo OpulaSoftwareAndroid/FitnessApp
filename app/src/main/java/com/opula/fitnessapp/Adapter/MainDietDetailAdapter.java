@@ -2,7 +2,6 @@ package com.opula.fitnessapp.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,7 @@ public class MainDietDetailAdapter extends RecyclerView.Adapter<MainDietDetailAd
     @Override
     public ViewHolder onCreateViewHolder( ViewGroup viewGroup, int position) {
 
-        View itemView = inflater.from(viewGroup.getContext()).inflate(R.layout.diet_detail_layout, viewGroup, false);
+        View itemView = inflater.from(viewGroup.getContext()).inflate(R.layout.know_your_diet_detail_item, viewGroup, false);
 
         return new ViewHolder(itemView);
     }
@@ -62,9 +61,6 @@ public class MainDietDetailAdapter extends RecyclerView.Adapter<MainDietDetailAd
             super(itemView);
 
             txt1 = (TextView)itemView.findViewById(R.id.txt1);
-            diet1 = (TextView)itemView.findViewById(R.id.diet1);
-            diet2 = (TextView)itemView.findViewById(R.id.diet2);
-            diet3 = (TextView)itemView.findViewById(R.id.diet3);
 
 
         }

@@ -36,7 +36,6 @@ public class MainMealTypeListActivity extends AppCompatActivity {
 
     AlertDialog alertDialog;
     RecyclerView recycler_dialog,dialog_diet_recycler;
-    DialogMainDietPlanAdapter dialogMainDietPlanAdapter;
 
 
 
@@ -53,7 +52,7 @@ public class MainMealTypeListActivity extends AppCompatActivity {
 
     TextView txtFoodName,txtFoodNametwo;
     CheckBox chk1;
-    Button btnSubmit,btnFood;
+    Button btnSubmitDiet,btnFood;
 
 
     RecyclerView diet_recycler;
@@ -77,7 +76,7 @@ public class MainMealTypeListActivity extends AppCompatActivity {
         txtFoodNametwo = (TextView) findViewById(R.id.txtFoodNametwo);
         chk1 = (CheckBox) findViewById(R.id.chk1);
         btnFood = (Button) findViewById(R.id.btnFood);
-        btnSubmit = (Button)findViewById(R.id.btnSubmit);
+        btnSubmitDiet = (Button)findViewById(R.id.btnSubmit);
 
 
         diet_recycler = (RecyclerView) findViewById(R.id.recylerViewMealType);
@@ -90,30 +89,21 @@ public class MainMealTypeListActivity extends AppCompatActivity {
 
 
         getMealTypeList();
-
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                GetSelectedFood();
-
-            }
-        });
+//
+//        btnSubmitDiet.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                GetSelectedFood();
+//
+//            }
+//        });
 
 
 
     }
 
-    private void buildDialog(int dialogTheme, String s) {
-        int animationSource = 0;
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Animation Dialog");
-        builder.setMessage(type);
-        builder.setNegativeButton("OK", null);
-        AlertDialog dialog = builder.create();
-        dialog.getWindow().getAttributes().windowAnimations = animationSource;
-        dialog.show();
-    }
+
     
 
 
@@ -142,7 +132,8 @@ public class MainMealTypeListActivity extends AppCompatActivity {
 
                         if (response.body().getStatus() == 1) {
 
-                        mainDietPlanAdapter = new MealTypeListAdapter(MainMealTypeListActivity.this,response.body().getInfo());
+                        mainDietPlanAdapter = new MealTypeListAdapter(MainMealTypeListActivity.this
+                                ,response.body().getInfo(),btnSubmitDiet);
                         LinearLayoutManager horizontal = new LinearLayoutManager(MainMealTypeListActivity.this,LinearLayoutManager.VERTICAL,false);
                         diet_recycler.setLayoutManager(horizontal);
                         diet_recycler.setAdapter(mainDietPlanAdapter);

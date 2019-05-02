@@ -113,21 +113,15 @@ MentorTypeListAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
 
-//
+                    //
 //                    progressBar = (ProgressBar)view.findViewById(R.id.progressBar);
 //                    progressBar.setVisibility(View.VISIBLE);
 //
-
-
-
 
                     Intent intent = new Intent(context, MentorSubTypeListActivity.class);
                     intent.putExtra("mentorTypeID", data.get(0).getMentorID());
                     intent.putExtra("mentorName", data.get(0).getName());
                     context.startActivity(intent);
-
-
-
 
                 }
             });

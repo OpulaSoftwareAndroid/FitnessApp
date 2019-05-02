@@ -37,10 +37,12 @@ public class Constants {
     public static final String TAG_REGISTER_ID = "RegisterID";
     public static final String TAG_VALID_DATA = "ValidData";
    public static final String TAG_MENTOR_TYPE = "MentorType";
-    public static final String TAG_TRAINER_ID = "strTrainerID" ;
+    public static final String TAG_TRAINER_ID = "TrainerID" ;
     public static final String TAG_PLAN_TYPE = "PlanType" ;
     public static final String TAG_PLAN_ID = "PlanID" ;
     public static final String TAG_PRICE ="Price" ;
+    public static final String TAG_PERIOD_NUMBER ="Period_Number" ;
+
     public static final String TAG_MEMBERSHIP_TYPE = "MembershipType";
     public static final String TAG_MESSAGE = "Message" ;
 
