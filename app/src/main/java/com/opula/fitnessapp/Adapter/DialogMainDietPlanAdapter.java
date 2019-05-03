@@ -15,6 +15,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.opula.fitnessapp.Crude.Constants;
+import com.opula.fitnessapp.Crude.SharedPreference;
 import com.opula.fitnessapp.POJOClasses.Foodlist.AfternoonSnack;
 import com.opula.fitnessapp.POJOClasses.Foodlist.Breakfast;
 import com.opula.fitnessapp.POJOClasses.Foodlist.Dinner;
@@ -46,12 +48,12 @@ public  class DialogMainDietPlanAdapter extends RecyclerView.Adapter<DialogMainD
     private  String strFoodID;
     android.support.v7.app.AlertDialog alertDialog;
     Button btnSubmitDiet;
-    private ArrayList <String> arrayListBreakFastSelected=new ArrayList<>();
-    private ArrayList <String> arrayListMorningSnackSelected=new ArrayList<>();
-    private ArrayList <String> arrayListLunchSelected=new ArrayList<>();
-    private ArrayList <String> arrayListAfterNoonSnackSelected=new ArrayList<>();
-    private ArrayList <String> arrayListDinnerSelected=new ArrayList<>();
-
+    private ArrayList <String> arrayListBreakFastSelected;
+    private ArrayList <String> arrayListMorningSnackSelected;
+    private ArrayList <String> arrayListLunchSelected;
+    private ArrayList <String> arrayListAfterNoonSnackSelected;
+    private ArrayList <String> arrayListDinnerSelected;
+    SharedPreference sharedPreference;
 
     public DialogMainDietPlanAdapter(Context context, List<Info> listMainfoodlist
             , List<Foodlist> foodlist, String strFoodID, LinearLayout linearLayoutAddUpdateFood, Button btnSubmitDiet, AlertDialog alertDialog) {
@@ -63,6 +65,13 @@ public  class DialogMainDietPlanAdapter extends RecyclerView.Adapter<DialogMainD
         this.linearLayoutAddUpdateFood=linearLayoutAddUpdateFood;
         this.btnSubmitDiet=btnSubmitDiet;
         this.alertDialog=alertDialog;
+        this.sharedPreference=new SharedPreference();
+        this.arrayListBreakFastSelected=new ArrayList<>();
+        this.arrayListMorningSnackSelected=new ArrayList<>();
+        this.arrayListLunchSelected=new ArrayList<>();
+        this.arrayListAfterNoonSnackSelected=new ArrayList<>();
+        this.arrayListDinnerSelected=new ArrayList<>();
+
         if(strFoodID.equalsIgnoreCase("1"))
         {
             breaklist=listMainfoodlist.get(0).getBreakfast();
@@ -116,11 +125,9 @@ public  class DialogMainDietPlanAdapter extends RecyclerView.Adapter<DialogMainD
                 holder.txtFoodName.setText(info.getFoodName());
                 holder.txtFoodNametwo.setText(info.getFoodCalories());
 
-
                 holder.chk1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
                     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
                         if (isChecked)
                         {
                             if(!arrayListBreakFastSelected.contains(info.getFoodDetailID())) {
@@ -137,7 +144,9 @@ public  class DialogMainDietPlanAdapter extends RecyclerView.Adapter<DialogMainD
                     }
 
                 });
-          addFoodToMeal(arrayListBreakFastSelected);
+
+               // sharedPreference.save(context, Constants.STORED_BREAKFAST_LIST,arrayListBreakFastSelected.toString());
+                addFoodToMeal(arrayListBreakFastSelected);
 
         }
        else if(strFoodID.equals("2"))
@@ -208,6 +217,7 @@ public  class DialogMainDietPlanAdapter extends RecyclerView.Adapter<DialogMainD
                 }
 
             });
+
 
             addFoodToMeal(arrayListLunchSelected);
 
@@ -299,12 +309,11 @@ public  class DialogMainDietPlanAdapter extends RecyclerView.Adapter<DialogMainD
 
     public void addFoodToMeal(final ArrayList<String> arrayListFoodToMealList)
     {
-        linearLayoutAddUpdateFood.setOnClickListener(new View.OnClickListener() {
+        linearLayoutAddUpdateFood.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG,"jigar the added in list we have is "+arrayListFoodToMealList.toString());
                 alertDialog.dismiss();
-
             }
         });
     }

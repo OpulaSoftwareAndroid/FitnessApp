@@ -50,6 +50,7 @@ public class Constants {
 
     // Shared Stored
     public static final String STORED_REGISTER_ID = "strRegisterId";
+    public static final String STORED_BREAKFAST_LIST = "strBreakFastList";
 
 
     public static final String SubscribeID = "subscribe_id";
